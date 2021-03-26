@@ -19,15 +19,6 @@ export default {
   },
   mounted() {
     this.url = `https://pub.alimama.com/manage/effect/overview_orders.htm?jumpType=0&positionIndex=&pageNo=1&startTime=${this.startTime}&endTime=${this.endTime}`;
-
-    // window.$(document).ready(async () => {
-    //   const running = await storageGet('running');
-    //   console.log('running: ', running);
-    //   if (!running) {
-    //     return;
-    //   }
-
-    // });
   },
   methods: {
     async handlerStart() {
