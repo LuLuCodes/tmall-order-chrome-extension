@@ -1,23 +1,18 @@
 <template>
-  <div>
-    hello
-  </div>
+  <div>hello123</div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
 
   components: {},
 
   data() {
     return {};
   },
-
   methods: {},
-
   computed: {},
-
-  mounted() {}
+  mounted() { },
 };
 </script>
