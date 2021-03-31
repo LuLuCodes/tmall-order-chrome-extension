@@ -30,7 +30,9 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["https://pub.alimama.com/manage/effect/overview_orders.htm*"],
+      "matches": [
+        "https://cashierstl.alipay.com/standard/lightpay/lightPayCashier.htm*"
+      ],
       "css": ["css/content.css"],
       "js": ["js/content.js"],
       "run_at": "document_end"

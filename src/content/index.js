@@ -7,6 +7,7 @@ import stroe from '@/mixins/store';
 import $ from 'jquery';
 // export for others scripts to use
 window.$ = $;
+window.jQuery = $;
 // 注入js到页面
 injectJS();
 Vue.use(ElementUI);

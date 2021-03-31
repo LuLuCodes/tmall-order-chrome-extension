@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service build --watch",
+    "dev": "vue-cli-service build --watch",
     "crx": "node ./src/scripts/crx.js",
     "build:crx": "npm run build && node src/scripts/crx.js",
     "build": "vue-cli-service build",
