@@ -1,5 +1,5 @@
 <template>
-  <el-button type="primary" class="greet" @click="hanlder">购买中</el-button>
+  <el-button type="primary" class="greet">选择商品中</el-button>
 </template>
 
 <script>
@@ -21,6 +21,8 @@ export default {
     async buy() {
       const goods_sku = await storageGet('goods_sku');
       window.$("span:contains('" + goods_sku + "')")[0].click();
+      await wait(1000);
+      window.$('#J_LinkBuy').click();
     },
   },
   computed: {},

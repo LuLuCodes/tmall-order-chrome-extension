@@ -41,6 +41,12 @@
       "css": ["css/content_select_goods.css"],
       "js": ["js/content_select_goods.js"],
       "run_at": "document_end"
+    },
+    {
+      "matches": ["https://buy.tmall.com/order/confirm_order.htm*"],
+      "css": ["css/content_buy.css"],
+      "js": ["js/content_buy.js"],
+      "run_at": "document_end"
     }
   ],
   "web_accessible_resources": ["fonts/*", "inject.js"]

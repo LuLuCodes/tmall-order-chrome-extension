@@ -57,6 +57,7 @@ module.exports = {
   configureWebpack: {
     // 多入口打包
     entry: {
+      content_buy: './src/content_buy/index.js',
       content_select_goods: './src/content_select_goods/index.js',
       content_get_order: './src/content_get_order/index.js',
       background: './src/chrome/background/index.js',
