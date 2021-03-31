@@ -1,5 +1,6 @@
 {
   "manifest_version": 2,
+
   "name": "tmall-order-chrome-extension",
   "description": "基于vue的chrome插件",
   "version": "1.0.0",
@@ -19,7 +20,7 @@
     "storage",
     "activeTab"
   ],
-  "background": {
+  "bacground": {
     "scripts": ["js/background.js"]
   },
   "icons": {
@@ -30,9 +31,15 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["https://pub.alimama.com/manage/effect/overview_orders.htm*"],
-      "css": ["css/content.css"],
-      "js": ["js/content.js"],
+      "matches": ["https://www.tmall.com/"],
+      "css": ["css/content_get_order.css"],
+      "js": ["js/content_get_order.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://detail.tmall.com/item.htm*"],
+      "css": ["css/content_select_goods.css"],
+      "js": ["js/content_select_goods.js"],
       "run_at": "document_end"
     }
   ],
