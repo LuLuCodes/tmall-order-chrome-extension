@@ -1,9 +1,9 @@
 <template>
-  <el-button
-    type="primary"
-    class="greet"
-    @click="handlerStart"
-  >{{ working ? '接单中' : '开始接单' }}</el-button>
+  <el-button type="primary" class="greet" @click="handlerStart">
+    {{
+    working ? '接单中' : '开始接单'
+    }}
+  </el-button>
 </template>
 
 <script>

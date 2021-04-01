@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import $ from 'jquery';
 import { wait, storageGet } from '../../utils';
 
 export default {
@@ -12,7 +13,7 @@ export default {
     return {};
   },
   mounted() {
-    window.$(document).ready(async () => {
+    $(document).ready(async () => {
       await wait(5000);
       this.buy();
     });
@@ -20,9 +21,12 @@ export default {
   methods: {
     async buy() {
       const goods_sku = await storageGet('goods_sku');
-      window.$("span:contains('" + goods_sku + "')")[0].click();
+      console.log(1111);
+      console.log(goods_sku);
+      $("span:contains('" + goods_sku + "')")[0].click();
       await wait(1000);
-      window.$('#J_LinkBuy').click();
+      console.log($('#J_LinkBuy'));
+      $('#J_LinkBuy')[0].click();
     },
   },
   computed: {},

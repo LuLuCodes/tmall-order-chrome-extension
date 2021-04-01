@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import $ from 'jquery';
 import { wait } from '../../utils';
 
 export default {
@@ -12,7 +13,7 @@ export default {
     return {};
   },
   mounted() {
-    window.$(document).ready(async () => {
+    $(document).ready(async () => {
       await wait(5000);
       this.buy();
     });
@@ -20,11 +21,9 @@ export default {
   methods: {
     async buy() {
       // window.$('.operation.TwoRow').click();
-      window.$("a:contains('显示全部地址')")[0].click();
+      $("a:contains('显示全部地址')")[0].click();
       await wait(1000);
-      const node = window
-        .$("a:contains('管理收货地址')")[0]
-        .getAttribute('href');
+      const node = $("a:contains('管理收货地址')")[0].getAttribute('href');
       console.log(node);
       // await wait(5000);
       // window.$('.cndzk-entrance-division-header-click-input').click();

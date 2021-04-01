@@ -1,7 +1,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ZipWebpackPlugin = require('zip-webpack-plugin');
 const path = require('path');
-
+const webpack = require('webpack');
 // 只需要复制的文件
 const copyFiles = [
   {
@@ -21,6 +21,12 @@ const copyFiles = [
 const plugins = [
   new CopyWebpackPlugin({
     patterns: copyFiles,
+  }),
+  new webpack.ProvidePlugin({
+    jQuery: 'jquery',
+    jquery: 'jquery',
+    $: 'jquery',
+    'window.jQ': 'jquery',
   }),
 ];
 // 生产环境打包dist为zip
