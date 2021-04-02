@@ -1,0 +1,32 @@
+https://h5api.m.taobao.com/h5/mtop.taobao.mbis.insertdeliveraddress/1.0/?jsv=2.4.2&appKey=27769795&t=1617327135376&sign=ff6d314ac33f2e21147f575cc1d9f450&api=mtop.taobao.mbis.insertdeliveraddress&v=1.0&ecode=0&needLogin=true&timeout=20000&dataType=originaljsonp&type=originaljsonp&data=%7B%22addressDetail%22%3A%22%E5%AF%8C%E6%B6%A6%E8%B7%AF300%E5%8F%B7%E5%98%89%E5%85%B4%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E4%BA%A7%E4%B8%9A%E5%9B%AD3%E5%8F%B7-%E9%BA%A6%E4%BA%91%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%22%2C%22longitude%22%3A%22%22%2C%22latitude%22%3A%22%22%2C%22postCode%22%3A%22314000%22%2C%22overseaAddress%22%3Afalse%2C%22fullName%22%3A%22%E9%93%B6%E7%AB%B9%22%2C%22mobileCode%22%3A%2286%22%2C%22mobile%22%3A%2218005838770%22%2C%22phoneInternationalCode%22%3A86%2C%22phoneAreaCode%22%3A%22%22%2C%22phoneNumber%22%3A%22%22%2C%22phoneExtension%22%3A%22%22%2C%22defaultDeliverAddress%22%3Atrue%2C%22deliverId%22%3A%22%22%2C%22divisionCode%22%3A%22330402013%22%2C%22townDivisionCode%22%3A%22330402013%22%7D
+
+
+:authority: h5api.m.taobao.com
+:method: GET
+:path: /h5/mtop.taobao.mbis.insertdeliveraddress/1.0/?jsv=2.4.2&appKey=27769795&t=1617327135376&sign=ff6d314ac33f2e21147f575cc1d9f450&api=mtop.taobao.mbis.insertdeliveraddress&v=1.0&ecode=0&needLogin=true&timeout=20000&dataType=originaljsonp&type=originaljsonp&data=%7B%22addressDetail%22%3A%22%E5%AF%8C%E6%B6%A6%E8%B7%AF300%E5%8F%B7%E5%98%89%E5%85%B4%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E4%BA%A7%E4%B8%9A%E5%9B%AD3%E5%8F%B7-%E9%BA%A6%E4%BA%91%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%22%2C%22longitude%22%3A%22%22%2C%22latitude%22%3A%22%22%2C%22postCode%22%3A%22314000%22%2C%22overseaAddress%22%3Afalse%2C%22fullName%22%3A%22%E9%93%B6%E7%AB%B9%22%2C%22mobileCode%22%3A%2286%22%2C%22mobile%22%3A%2218005838770%22%2C%22phoneInternationalCode%22%3A86%2C%22phoneAreaCode%22%3A%22%22%2C%22phoneNumber%22%3A%22%22%2C%22phoneExtension%22%3A%22%22%2C%22defaultDeliverAddress%22%3Atrue%2C%22deliverId%22%3A%22%22%2C%22divisionCode%22%3A%22330402013%22%2C%22townDivisionCode%22%3A%22330402013%22%7D
+:scheme: https
+accept: text/plain, */*; q=0.01
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+cache-control: no-cache
+origin: https://trade3.zhihuiyunnet.com
+pragma: no-cache
+referer: https://trade3.zhihuiyunnet.com/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36 Edg/89.0.774.45
+
+
+jsv: 2.4.2
+appKey: 27769795
+t: 1617327135376
+sign: ff6d314ac33f2e21147f575cc1d9f450
+api: mtop.taobao.mbis.insertdeliveraddress
+v: 1.0
+ecode: 0
+needLogin: true
+timeout: 20000
+dataType: originaljsonp
+type: originaljsonp
+data: {"addressDetail":"富润路300号嘉兴电子商务产业园3号-麦云信息科技有限公司","longitude":"","latitude":"","postCode":"314000","overseaAddress":false,"fullName":"银竹","mobileCode":"86","mobile":"18005838770","phoneInternationalCode":86,"phoneAreaCode":"","phoneNumber":"","phoneExtension":"","defaultDeliverAddress":true,"deliverId":"","divisionCode":"330402013","townDivisionCode":"330402013"}

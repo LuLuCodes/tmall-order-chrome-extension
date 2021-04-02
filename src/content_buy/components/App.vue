@@ -1,5 +1,5 @@
 <template>
-  <el-button type="primary" class="greet">下单中</el-button>
+  <el-button type="primary" class="greet" @click="getCookie">下单中</el-button>
 </template>
 
 <script>
@@ -13,12 +13,22 @@ export default {
     return {};
   },
   mounted() {
-    $(document).ready(async () => {
-      await wait(5000);
-      this.buy();
-    });
+    // $(document).ready(async () => {
+    //   await wait(5000);
+    //   this.buy();
+    // });
   },
   methods: {
+    getCookie() {
+      chrome.runtime.sendMessage(
+        {
+          info: false,
+        },
+        res => {
+          console.log(res);
+        },
+      );
+    },
     async buy() {
       // window.$('.operation.TwoRow').click();
       $("a:contains('显示全部地址')")[0].click();

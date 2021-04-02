@@ -18,7 +18,8 @@
     "https://*/",
     "<all_urls>",
     "storage",
-    "activeTab"
+    "activeTab",
+    "cookies"
   ],
   "bacground": {
     "scripts": ["js/background.js"]

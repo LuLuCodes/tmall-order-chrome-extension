@@ -1,0 +1,32 @@
+请求 URL: https://h5api.m.taobao.com/h5/mtop.taobao.mbis.insertdeliveraddress/1.0/?jsv=2.5.1&appKey=27769795&t=1617325591256&sign=42b6ad7e860fc7cc70bfb01ac19d8bbc&api=mtop.taobao.mbis.insertDeliverAddress&v=1.0&ecode=1&needLogin=true&timeout=20000&dataType=jsonp&type=jsonp&callback=mtopjsonp17&data=%7B%22divisionCode%22%3A%22140303003%22%2C%22townDivisionCode%22%3A%22140303003%22%2C%22detailDivisionCode%22%3A%22%22%2C%22addressDetail%22%3A%22%E8%BE%85%E5%AF%BC%E8%B4%B9%E6%98%AF%E5%9C%B0%E6%96%B9%22%2C%22postCode%22%3A%22311877%22%2C%22overseaAddress%22%3Afalse%2C%22fullName%22%3A%22%E9%92%B1%E5%8D%BF%22%2C%22mobileCode%22%3A86%2C%22mobile%22%3A%2213758087094%22%2C%22phoneInternationalCode%22%3A86%2C%22phoneAreaCode%22%3A%22%22%2C%22phoneNumber%22%3A%22%22%2C%22phoneExtension%22%3A%22%22%2C%22defaultDeliverAddress%22%3Afalse%2C%22acceptAddressName%22%3Atrue%2C%22province%22%3A%22%E5%B1%B1%E8%A5%BF%E7%9C%81%22%2C%22city%22%3A%22%E9%98%B3%E6%B3%89%E5%B8%82%22%2C%22area%22%3A%22%E7%9F%BF%E5%8C%BA%22%2C%22town%22%3A%22%E8%94%A1%E6%B4%BC%E8%A1%97%E9%81%93%22%7D
+
+:authority: h5api.m.taobao.com
+:method: GET
+:path: /h5/mtop.taobao.mbis.insertdeliveraddress/1.0/?jsv=2.5.1&appKey=27769795&t=1617325591256&sign=42b6ad7e860fc7cc70bfb01ac19d8bbc&api=mtop.taobao.mbis.insertDeliverAddress&v=1.0&ecode=1&needLogin=true&timeout=20000&dataType=jsonp&type=jsonp&callback=mtopjsonp17&data=%7B%22divisionCode%22%3A%22140303003%22%2C%22townDivisionCode%22%3A%22140303003%22%2C%22detailDivisionCode%22%3A%22%22%2C%22addressDetail%22%3A%22%E8%BE%85%E5%AF%BC%E8%B4%B9%E6%98%AF%E5%9C%B0%E6%96%B9%22%2C%22postCode%22%3A%22311877%22%2C%22overseaAddress%22%3Afalse%2C%22fullName%22%3A%22%E9%92%B1%E5%8D%BF%22%2C%22mobileCode%22%3A86%2C%22mobile%22%3A%2213758087094%22%2C%22phoneInternationalCode%22%3A86%2C%22phoneAreaCode%22%3A%22%22%2C%22phoneNumber%22%3A%22%22%2C%22phoneExtension%22%3A%22%22%2C%22defaultDeliverAddress%22%3Afalse%2C%22acceptAddressName%22%3Atrue%2C%22province%22%3A%22%E5%B1%B1%E8%A5%BF%E7%9C%81%22%2C%22city%22%3A%22%E9%98%B3%E6%B3%89%E5%B8%82%22%2C%22area%22%3A%22%E7%9F%BF%E5%8C%BA%22%2C%22town%22%3A%22%E8%94%A1%E6%B4%BC%E8%A1%97%E9%81%93%22%7D
+:scheme: https
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+cache-control: no-cache
+cookie: thw=cn; UM_distinctid=175dfb75ccbae0-0b1f0ca8d22ec9-7f63045b-1aeaa0-175dfb75cccbd; _samesite_flag_=true; t=2900ad935ecbe15d82e4274f9ae0916d; cookie2=1284b467ea6512b1049f4b4fa6df6b93; hng=CN%7Czh-CN%7CCNY%7C156; xlly_s=1; _tb_token_=eee3e1e7dfe39; enc=l%2F7VUkEgdSzj9v3cYoMBd%2BU5U1YuMZGn5cDnEZtyvnmWyR9J13G%2BFPRe25LiUGaZdsQTAyH4Bbh2AD63OyQ4og%3D%3D; cna=9Q0bF3m3NiUCAXrhPOYsg+sI; _m_h5_tk=e413d669178fa864f90a14bc820d00aa_1617332740990; _m_h5_tk_enc=670f12a92d3fb1663a0b1d34b6e4bcba; sgcookie=E100wbzFsSovQxvXlTcRlQ1d7ECpOHoW3mm5agBEFKVE2eYlFUHkVR8qjKulfef556zlxuS%2BQeWNOjAKtZIzByS8qQ%3D%3D; unb=56254000; uc3=nk2=EvywP6uAFiL5oqgzHHukAw%3D%3D&lg2=UtASsssmOIJ0bQ%3D%3D&id2=Vvj868QKDW8%3D&vt3=F8dCuAtYTM8rapr7bBo%3D; csg=a9d1a4de; lgc=qianqingchenzhen; cookie17=Vvj868QKDW8%3D; dnk=qianqingchenzhen; skt=01eec9bfd97045ff; existShop=MTYxNzMyNTU0Ng%3D%3D; uc4=id4=0%40VH758OXWXGk3FHJaSyQQ00tuVg%3D%3D&nk4=0%40EIOda2PUfiDlAjhRHek63q%2F80Q60k3f97stl; tracknick=qianqingchenzhen; _cc_=UtASsssmfA%3D%3D; _l_g_=Ug%3D%3D; sg=n0b; _nk_=qianqingchenzhen; cookie1=AVNdPPcPXfDkNsqIgsX%2FfxSOWp1sLQTOp9bU0lAXpiI%3D; mt=ci=9_1; v=0; uc1=cookie16=URm48syIJ1yk0MX2J7mAAEhTuw%3D%3D&pas=0&cookie14=Uoe1hdI9fWFYGw%3D%3D&existShop=false&cookie15=W5iHLLyFOGW7aA%3D%3D&cookie21=W5iHLLyFfXCagRWZKCM%3D; tfstk=clw5BZ138yeV6r5eUus2LAwytBlFagAiATg7V5NLhLYRTZErksVWQV6zmyYq6Mmf.; l=eBxAfASljhYlCj_wBO5alurza7795QRXGsPzaNbMiInca6IFKFPLqNCQ4fBwjdtjgtfcCE-yL--izR3y58aU5xtQeY_1uEFuGxv9-; isg=BC0t673LMeo1edU5Tq4stnbaPM-nimFcSDINFW8wikQw5kGYONg4Lcjw0LoA5nkU
+pragma: no-cache
+referer: https://member1.taobao.com/
+sec-fetch-dest: script
+sec-fetch-mode: no-cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36 Edg/89.0.774.45
+
+
+jsv: 2.5.1
+appKey: 27769795
+t: 1617325591256
+sign: 42b6ad7e860fc7cc70bfb01ac19d8bbc
+api: mtop.taobao.mbis.insertDeliverAddress
+v: 1.0
+ecode: 1
+needLogin: true
+timeout: 20000
+dataType: jsonp
+type: jsonp
+callback: mtopjsonp17
+data: {"divisionCode":"140303003","townDivisionCode":"140303003","detailDivisionCode":"","addressDetail":"辅导费是地方","postCode":"311877","overseaAddress":false,"fullName":"钱卿","mobileCode":86,"mobile":"13758087094","phoneInternationalCode":86,"phoneAreaCode":"","phoneNumber":"","phoneExtension":"","defaultDeliverAddress":false,"acceptAddressName":true,"province":"山西省","city":"阳泉市","area":"矿区","town":"蔡洼街道"}
