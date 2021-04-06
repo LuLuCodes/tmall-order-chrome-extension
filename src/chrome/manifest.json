@@ -21,7 +21,7 @@
     "activeTab",
     "cookies"
   ],
-  "bacground": {
+  "background": {
     "scripts": ["js/background.js"]
   },
   "icons": {

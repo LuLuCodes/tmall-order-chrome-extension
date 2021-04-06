@@ -5,7 +5,9 @@
 <script>
 import $ from 'jquery';
 import { wait } from '../../utils';
-
+import { storageGet, tb_sign } from '../../utils';
+import axios from 'axios';
+axios.defaults.withCredentials = true;
 export default {
   name: 'App',
   components: {},
@@ -17,17 +19,61 @@ export default {
     //   await wait(5000);
     //   this.buy();
     // });
+    chrome.runtime.sendMessage({
+      action: 'getCookies',
+      url: 'https://member1.taobao.com/member/fresh/deliver_address.htm',
+    });
   },
   methods: {
-    getCookie() {
-      chrome.runtime.sendMessage(
-        {
-          info: false,
-        },
-        res => {
-          console.log(res);
-        },
-      );
+    async getCookie() {
+      const cookies = await storageGet('current_page_cookies');
+      // console.log(JSON.stringify(cookies));
+      const cookiesStr = cookies.reduce((prev, cur) => {
+        return prev + `${cur.name}=${cur.value};`;
+      }, '');
+      console.log(cookiesStr);
+      const appKey = '27769795';
+      const token = cookies
+        .filter(item => {
+          return item.name === '_m_h5_tk';
+        })[0]
+        .value.split('_')[0];
+      const time = new Date().getTime();
+      const dataStr = JSON.stringify({
+        divisionCode: '120103001',
+        townDivisionCode: '120103001',
+        detailDivisionCode: '',
+        addressDetail: '富润路300号',
+        postCode: '311877',
+        overseaAddress: false,
+        fullName: '钱卿',
+        mobileCode: 86,
+        mobile: '13758087094',
+        phoneInternationalCode: 86,
+        phoneAreaCode: '',
+        phoneNumber: '',
+        phoneExtension: '',
+        defaultDeliverAddress: true,
+        acceptAddressName: true,
+        province: '天津',
+        city: '天津市',
+        area: '河西区',
+        town: '大营门街道',
+      });
+      const sign = tb_sign(token, time, appKey, dataStr);
+      let url =
+        'https://h5api.m.taobao.com/h5/mtop.taobao.mbis.insertdeliveraddress/1.0/?jsv=2.5.1&appKey=27769795&t=' +
+        time +
+        '&sign=' +
+        sign +
+        '&api=mtop.taobao.mbis.insertDeliverAddress&v=1.0&ecode=1&needLogin=true&timeout=20000&dataType=jsonp&type=jsonp&callback=mtopjsonp20&data=' +
+        encodeURIComponent(dataStr);
+      console.log(url);
+      const res = await axios({
+        method: 'get',
+        url,
+      });
+      console.log(res.data);
     },
     async buy() {
       // window.$('.operation.TwoRow').click();

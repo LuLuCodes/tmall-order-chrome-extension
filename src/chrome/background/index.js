@@ -1,12 +1,25 @@
 import installReload from './hmr';
 import installRequest from './request';
+import { storageSet } from '../../utils';
 
 // 安装热刷新功能
 installReload();
 installRequest();
-console.log(123123123);
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  console.log(request, sender, sendResponse);
-
-  sendResponse('我是后台，我已收到你的消息：' + JSON.stringify({ ok: true }));
+  const { action } = request;
+  switch (action) {
+    case 'getCookies':
+      getCookies(action.url || sender.url, sendResponse);
+      break;
+    default:
+      break;
+  }
 });
+
+function getCookies(url, sendResponse) {
+  chrome.cookies.getAll({ domain: 'taobao.com' }, async cookies => {
+    console.log(cookies);
+    await storageSet({ current_page_cookies: cookies });
+  });
+  sendResponse({ success: true });
+}

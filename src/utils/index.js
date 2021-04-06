@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 // 模拟同步sleep机制
 export function wait(ms) {
   return new Promise(resolve => {
@@ -42,4 +44,15 @@ export function randomNum(aryNum = [1, 1]) {
         return 0;
     }
   }
+}
+
+export function tb_md5(data) {
+  const md5 = crypto.createHash('md5');
+  md5.update(data);
+  const str = md5.digest('hex');
+  return str.toLowerCase();
+}
+
+export function tb_sign(token, time, appKey, dataStr) {
+  return tb_md5(`${token}&${time}&${appKey}&${dataStr}`);
 }
